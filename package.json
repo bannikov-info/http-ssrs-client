@@ -1,5 +1,5 @@
 {
-  "name": "node-ssrs-client",
+  "name": "http-ssrs-client",
   "version": "0.0.1",
   "description": "",
   "main": "index.js",
@@ -8,7 +8,16 @@
   },
   "author": "Bannikov Evgeny",
   "license": "ISC",
+  "bin":{
+    "ssrs-client": "bin/ssrs-client"
+  },
+  "files": [
+    "bin",
+    "lib",
+    "index.js"
+  ],
   "dependencies": {
-    "httpntlm": "^1.6.1"
+    "httpntlm": "^1.6.1",
+    "optimist": "^0.6.1"
   }
 }
